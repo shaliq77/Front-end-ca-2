@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>CAPTCHA BONANZA</title>
+</head>
+<body>
+    <div class="audio1">
+    <audio id="bgAudio" loop>
+        <source src="the-final-boss-battle-158700.mp3" type="audio/mp3">
+    </audio>
+    <button id="audioToggleBtn" onclick="toggleAudio()">Toggle Audio</button>
+    </div>
+    <div class="container">
+        <div id="login" style="display: block;">
+            <h2>Login</h2>
+            <div class="namein2">
+            <label for="name" id="name2">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="namein1">
+            <label for="nickname">Nickname:</label>
+            <input type="text" id="nickname" placeholder="Enter your nickname">
+            </div>
+            <a href="Index.html" class="EXIT-button">EXIT</a>
+            <a href="instru.html" class="EXIT-button">HELP</a>
+            <button onclick="levelpage()" class="EXIT-button">ENTER</button>
+            
+        </div>
+        <div id="level">
+            <h1>Choose a Level</h1>
+            <button onclick="startGame()">Level 1</button>
+            <button onclick="startGame2()">Level 2</button>
+            <button onclick="startGame3()">Level 3</button>
+        </div>
+        <div id="game" style="display: none;">
+            <h1>CAPTCHA BONANZA</h1>
+            <p id="greeting"></p>
+            <p id="captcha"></p>
+            <input type="text" id="userInput" placeholder="Type here">
+            <button onclick="checkCaptcha()" id="greensubmit">Submit</button>
+            <button onclick="checkCaptcha2()" id="greensubmit2">Submit</button>
+            <button onclick="checkCaptcha3()" id="greensubmit3">Submit</button>
+            <p id="score">Score: <span id="scoreValue">0</span></p>
+            <button onclick="resetGame()" id="reset-button">Reset Game</button>
+            <button onclick="resetGame2()" id="reset-button2">Reset Game</button>
+            <button onclick="resetGame3()" id="reset-button3">Reset Game</button>
+            <a href="Index.html" class="EXIT-button">EXIT</a>
+        </div>
+        <div id="timer"></div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&#10006;</span>
+                <h2>Time Over!</h2>
+                <p id="timeup"></p>
+                <p id="sco1"></p>
+            </div>
+        </div>
+        </div>
+        <div id="winpopup" class="winpopup">
+            <div class="winpopup-content">
+                <span class="winclose" onclick="winclosePopup()">&#10006;</span>
+                <h2>Victory!</h2>
+                <p id="win"></p>
+                <p id="sco"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

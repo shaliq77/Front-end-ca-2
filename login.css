@@ -1,0 +1,223 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
+
+
+body {
+    font-family: 'New Rocker';
+    background-color: #000000;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 700px;
+    margin: 70px auto;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.411);
+    
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#captcha{
+    font-family: 'Niramit', sans-serif;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: none;
+    font-family: 'New Rocker';
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(153, 6, 6);
+}
+
+#login {
+    margin-top: 20px;
+}
+
+input {
+    margin: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-timing-function: ease-in-out;
+    transition: width 2s;
+}
+
+.winpopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition-timing-function: ease-in-out;
+    transition: width 2s;
+    
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 7px;
+
+}
+
+.winpopup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 7px;
+    border: 2px solid white;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.winclose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+#name{
+    border-radius: 8px;
+}
+#nickname{
+    border-radius: 8px;
+}
+
+
+#winPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in-out;
+}
+
+#winPopup .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+#userInput{
+    border-radius: 6px;
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.EXIT-button{
+    display: inline-block;
+    margin: 10px;
+    padding: 9px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.EXIT-button:hover {
+    background-color: rgb(153, 6, 6);
+}
+
+#greensubmit:hover{
+    background-color: green;
+}
+#greensubmit2:hover{
+    background-color: green;
+}
+#greensubmit3:hover{
+    background-color: green;
+}
+
+.start-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.start-button:hover {
+    background-color: #b60000;
+}
+
+
+.namein1{
+    white-space: 25px;
+}
+
+
+#audioToggleBtn {
+    display: flex;
+}
+

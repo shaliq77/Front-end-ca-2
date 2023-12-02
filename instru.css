@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+
+body {
+    background-color: black;
+    font-family: 'New Rocker';
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+#instructions {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ol {
+    margin-top: 0;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+
+.start-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.start-button:hover {
+    background-color: #b60000;
+}
